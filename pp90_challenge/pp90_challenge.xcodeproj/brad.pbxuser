@@ -37,6 +37,10 @@
 			PBXPerProjectTemplateStateSaveDate = 244019961;
 			PBXWorkspaceStateSaveDate = 244019961;
 		};
+		perUserProjectItems = {
+			A2D1777D0E8B74FC00021FF6 /* PBXTextBookmark */ = A2D1777D0E8B74FC00021FF6 /* PBXTextBookmark */;
+			A2D1777E0E8B74FC00021FF6 /* PBXTextBookmark */ = A2D1777E0E8B74FC00021FF6 /* PBXTextBookmark */;
+		};
 		sourceControlManager = A2D177760E8B730000021FF6 /* Source Control */;
 		userBuildSettings = {
 		};
@@ -54,12 +58,13 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -80,5 +85,32 @@
 	A2D177770E8B730000021FF6 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	A2D177780E8B736800021FF6 /* AppController.rb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 253}}";
+			sepNavSelRange = "{241, 0}";
+			sepNavVisRange = "{0, 358}";
+		};
+	};
+	A2D1777D0E8B74FC00021FF6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A2D177780E8B736800021FF6 /* AppController.rb */;
+		name = "AppController.rb: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 170;
+		vrLoc = 0;
+	};
+	A2D1777E0E8B74FC00021FF6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A2D177780E8B736800021FF6 /* AppController.rb */;
+		name = "AppController.rb: 13";
+		rLen = 0;
+		rLoc = 241;
+		rType = 0;
+		vrLen = 358;
+		vrLoc = 0;
 	};
 }
