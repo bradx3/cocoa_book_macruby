@@ -19,7 +19,7 @@
 					20,
 					341,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -34,12 +34,13 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 244018853;
-			PBXWorkspaceStateSaveDate = 244018853;
+			PBXPerProjectTemplateStateSaveDate = 244019573;
+			PBXWorkspaceStateSaveDate = 244019573;
 		};
 		perUserProjectItems = {
-			A24A8D8E0E8B6FBB002F0E54 /* PBXTextBookmark */ = A24A8D8E0E8B6FBB002F0E54 /* PBXTextBookmark */;
-			A24A8DA70E8B70FA002F0E54 /* PBXTextBookmark */ = A24A8DA70E8B70FA002F0E54 /* PBXTextBookmark */;
+			A24A8D8E0E8B6FBB002F0E54 = A24A8D8E0E8B6FBB002F0E54 /* PBXTextBookmark */;
+			A24A8DA70E8B70FA002F0E54 = A24A8DA70E8B70FA002F0E54 /* PBXTextBookmark */;
+			A2D177520E8B717700021FF6 /* PBXTextBookmark */ = A2D177520E8B717700021FF6 /* PBXTextBookmark */;
 		};
 		sourceControlManager = A24A8D8A0E8B6EC5002F0E54 /* Source Control */;
 		userBuildSettings = {
@@ -79,7 +80,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {519, 364}}";
 			sepNavSelRange = "{370, 0}";
-			sepNavVisRange = "{141, 285}";
+			sepNavVisRange = "{141, 281}";
 		};
 	};
 	A24A8D8A0E8B6EC5002F0E54 /* Source Control */ = {
@@ -111,6 +112,16 @@
 		rLoc = 370;
 		rType = 0;
 		vrLen = 285;
+		vrLoc = 141;
+	};
+	A2D177520E8B717700021FF6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A24A8D880E8B6EC4002F0E54 /* AppController.rb */;
+		name = "AppController.rb: 20";
+		rLen = 0;
+		rLoc = 370;
+		rType = 0;
+		vrLen = 281;
 		vrLoc = 141;
 	};
 }
