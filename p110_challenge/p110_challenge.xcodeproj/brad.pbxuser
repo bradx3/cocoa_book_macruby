@@ -37,10 +37,6 @@
 			PBXPerProjectTemplateStateSaveDate = 244076693;
 			PBXWorkspaceStateSaveDate = 244076693;
 		};
-		perUserProjectItems = {
-			A2CB24DF0E8C508B000EA0E0 = A2CB24DF0E8C508B000EA0E0 /* PBXTextBookmark */;
-			A2CB24E00E8C508B000EA0E0 = A2CB24E00E8C508B000EA0E0 /* PBXTextBookmark */;
-		};
 		sourceControlManager = A2CB24DA0E8C5076000EA0E0 /* Source Control */;
 		userBuildSettings = {
 		};
@@ -66,12 +62,13 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -93,24 +90,12 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	A2CB24DF0E8C508B000EA0E0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DE339F60D74FCDD00ADB6EE /* rb_main.rb */;
-		name = "rb_main.rb: 5";
-		rLen = 0;
-		rLoc = 71;
-		rType = 0;
-		vrLen = 132;
-		vrLoc = 0;
-	};
-	A2CB24E00E8C508B000EA0E0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4DE339F60D74FCDD00ADB6EE /* rb_main.rb */;
-		name = "rb_main.rb: 5";
-		rLen = 0;
-		rLoc = 71;
-		rType = 0;
-		vrLen = 132;
-		vrLoc = 0;
+	A2CB24ED0E8C50A4000EA0E0 /* AppController.rb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {691, 592}}";
+			sepNavSelRange = "{497, 0}";
+			sepNavVisRange = "{0, 643}";
+			sepNavWindowFrame = "{{1668, 292}, {750, 720}}";
+		};
 	};
 }

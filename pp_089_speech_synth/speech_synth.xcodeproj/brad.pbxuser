@@ -74,8 +74,8 @@
 	A24A8D880E8B6EC4002F0E54 /* AppController.rb */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {691, 882}}";
-			sepNavSelRange = "{1077, 56}";
-			sepNavVisRange = "{402, 955}";
+			sepNavSelRange = "{685, 0}";
+			sepNavVisRange = "{144, 928}";
 			sepNavWindowFrame = "{{15, 53}, {750, 720}}";
 		};
 	};
