@@ -328,7 +328,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>A2CB249C0E8C4E8C000EA0E0</string>
+										<string>A2CB249E0E8C4F12000EA0E0</string>
 										<key>history</key>
 										<array>
 											<string>A2EA11110E8B7D4200966938</string>
@@ -525,9 +525,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>A24A8D960E8B7043002F0E54</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/brad/projects/cocoa_book/pp_089_speech_synth/speech_synth.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -908,7 +908,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
