@@ -14,11 +14,20 @@ class AppController
 	attr_accessor :table_view
 	
 	def initialize()
+		puts "init"
 		@speaker = NSSpeechSynthesizer.new
 		@speaker.setDelegate(self)
 		
 		@voices = NSSpeechSynthesizer.availableVoices
 	end
+
+	def awakeFromNib() 
+		default_voice = NSSpeechSynthesizer.defaultVoice
+		row = @voices.index(default_voice)
+		@table_view.selectRow(row, byExtendingSelection:false)
+		@table_view.scrollRowToVisible(row)
+	end
+	
 	
 	def say(sender)
 		str = @text_field.stringValue()
