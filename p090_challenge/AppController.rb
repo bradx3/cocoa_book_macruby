@@ -1,8 +1,8 @@
 #
 #  AppController.rb
-#  p109_challenge
+#  pp90_challenge
 #
-#  Created by Brad Wilson on 26/09/08.
+#  Created by Brad Wilson on 25/09/08.
 #  Copyright (c) 2008 Brad Wilson.
 #
 # MIT License:
@@ -26,10 +26,11 @@
 #
 
 class AppController
-	def windowWillResize(sender, toSize:size)
-		
-		size.height = size.width / 2
-		
-		return size
+	attr_accessor :text_field
+	attr_accessor :count_label
+	
+	def count(sender)
+		str = @text_field.stringValue
+		@count_label.setStringValue("'#{ str }' has #{ str.length } characters")
 	end
 end

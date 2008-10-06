@@ -2,3 +2,4 @@
 *tm_build_errors
 *.mode2v3
 *.pbxuser
+.DS_Store
