@@ -3,7 +3,7 @@
 #  p124_raiseman
 #
 #  Created by Brad Wilson on 26/09/08.
-#  Copyright (c) 2008 __MyCompanyName__. All rights reserved.
+#  Copyright (c) 2008 Brad Wilson. All rights reserved.
 #
 
 class Person

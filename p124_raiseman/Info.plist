@@ -21,14 +21,16 @@
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>NSMainNibFile</key>
-	<string>MyDocument</string>
+	<string>MainMenu</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
 			<key>CFBundleTypeName</key>
 			<string>MyDocument</string>
-			<key>LSHandlerRank</key>
-			<string>Default</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>NSDocumentClass</key>
+			<string>MyDocument</string>
 		</dict>
 	</array>
 	<key>NSPrincipalClass</key>

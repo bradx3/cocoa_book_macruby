@@ -12,6 +12,8 @@ class MyDocument < NSDocument
 	attr_accessor :employees
 	
 	def init
+	
+		puts "SDS"
 		@employees = []
 		super
 	end
