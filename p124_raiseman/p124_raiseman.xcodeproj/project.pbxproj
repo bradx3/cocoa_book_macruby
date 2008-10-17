@@ -13,6 +13,7 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		A24397EE0EA81CA000F25948 /* MyArrayController.rb in Resources */ = {isa = PBXBuildFile; fileRef = A24397ED0EA81CA000F25948 /* MyArrayController.rb */; };
 		A2CB257D0E8C6204000EA0E0 /* MyDocument.rb in Resources */ = {isa = PBXBuildFile; fileRef = A2CB257C0E8C6204000EA0E0 /* MyDocument.rb */; };
 		A2CB25810E8C6216000EA0E0 /* Person.rb in Resources */ = {isa = PBXBuildFile; fileRef = A2CB25800E8C6216000EA0E0 /* Person.rb */; };
 		A2CB258B0E8C6383000EA0E0 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = A2CB258A0E8C6383000EA0E0 /* MyDocument.nib */; };
@@ -30,6 +31,7 @@
 		4DE3BE130D8651D900ECA448 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* p124_raiseman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = p124_raiseman.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24397ED0EA81CA000F25948 /* MyArrayController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = MyArrayController.rb; sourceTree = "<group>"; };
 		A2CB257C0E8C6204000EA0E0 /* MyDocument.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = MyDocument.rb; sourceTree = "<group>"; };
 		A2CB25800E8C6216000EA0E0 /* Person.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Person.rb; sourceTree = "<group>"; };
 		A2CB258A0E8C6383000EA0E0 /* MyDocument.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MyDocument.nib; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				A2CB257C0E8C6204000EA0E0 /* MyDocument.rb */,
 				A2CB25800E8C6216000EA0E0 /* Person.rb */,
+				A24397ED0EA81CA000F25948 /* MyArrayController.rb */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				A2CB257D0E8C6204000EA0E0 /* MyDocument.rb in Resources */,
 				A2CB25810E8C6216000EA0E0 /* Person.rb in Resources */,
 				A2CB258B0E8C6383000EA0E0 /* MyDocument.nib in Resources */,
+				A24397EE0EA81CA000F25948 /* MyArrayController.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

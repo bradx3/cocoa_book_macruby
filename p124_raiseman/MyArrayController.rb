@@ -1,9 +1,9 @@
 #
-#  Person.rb
+#  MyArrayController.rb
 #  p124_raiseman
 #
-#  Created by Brad Wilson on 26/09/08.
-#  Copyright (c) 2008 Brad Wilson.
+#  Created by Brad Wilson on 17/10/08.
+#  Copyright (c) 2008 Brad Wilson. 
 #
 # MIT License:
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -24,13 +24,29 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
+require 'osx/cocoa'
 
-class Person
-  attr_accessor :personName
-  attr_accessor :expectedRaise
-  
-  def initialize
-    @expectedRaise = 5.0
-    @personName = "New Person"
+###
+# At the time of writing (20081017) the method described in the book caused MacRuby
+# to crash. This is a workaround, but shouldn't be too different from the book really.
+###
+class MyArrayController < NSArrayController
+  attr_accessor :myDocument
+
+  def add(sender)
+    super(sender)
+
+    undo = @myDocument.undoManager
+    undo.prepareWithInvocationTarget(self).remove(sender)
+    undo.setActionName "Insert Person" if !undo.isUndoing
   end
+
+  def remove(sender)
+    super(sender)
+
+    undo = @myDocument.undoManager
+    undo.prepareWithInvocationTarget(self).add(sender)
+    undo.setActionName "Delete Person" if !undo.isUndoing
+  end
+
 end

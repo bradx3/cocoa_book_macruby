@@ -27,13 +27,13 @@
 require 'osx/cocoa'
 
 class MyDocument < NSDocument
-	attr_accessor :employees
-	
-	def init
-		@employees = []
-		super
-	end
-	
+  attr_accessor :employees
+
+  def init
+    @employees = []
+    super
+  end
+
   def windowNibName
     # Implement this to return a nib to load OR implement
     # -makeWindowControllers to manually create your controllers.
@@ -54,4 +54,8 @@ class MyDocument < NSDocument
     return true
   end
 	
+  def windowWillReturnUndoManager(sender)
+    return undoManager
+  end
+
 end
