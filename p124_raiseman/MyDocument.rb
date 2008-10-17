@@ -58,4 +58,26 @@ class MyDocument < NSDocument
     return undoManager
   end
 
+  def startObservingPerson(person)
+    person.addObserver(self, 
+                       forKeyPath:"personName",
+                       options:NSKeyValueObservingOptionOld,
+                       context:nil)
+  end
+
+  def changeKeyPath(keyPath, ofObject:obj, toValue:newValue)
+    obj.setValue(newValue, forKeyPath:keyPath)
+  end
+
+  def observeValueForKeyPath(keyPath, ofObject:object, change:change, context:content)
+    undo = undoManager
+    oldValue = change[NSKeyValueChangeOldKey]
+
+    #oldValue = nil if oldValue == NSNull.null
+    undo.prepareWithInvocationTarget(self).changeKeyPath(keyPath, 
+                                                         ofObject:object,
+                                                         toValue:oldValue)
+    undo.setActionName("Edit")
+
+  end
 end

@@ -40,6 +40,12 @@ class MyArrayController < NSArrayController
     undo.prepareWithInvocationTarget(self).remove(sender)
     undo.setActionName "Insert Person" if !undo.isUndoing
   end
+  
+  def addObject(object)
+    super(object)
+
+    myDocument.startObservingPerson(object)
+  end
 
   def remove(sender)
     super(sender)
@@ -48,5 +54,6 @@ class MyArrayController < NSArrayController
     undo.prepareWithInvocationTarget(self).add(sender)
     undo.setActionName "Delete Person" if !undo.isUndoing
   end
+
 
 end
