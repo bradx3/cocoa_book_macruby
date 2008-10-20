@@ -53,7 +53,13 @@ class MyArrayController < NSArrayController
     undo = @myDocument.undoManager
     undo.prepareWithInvocationTarget(self).add(sender)
     undo.setActionName "Delete Person" if !undo.isUndoing
+
+#    myDocument.stopObservingPerson(
   end
 
+  def removeObjectAtArrangedObjectIndex(index)
+    myDocument.stopObservingPersonAt(index)
 
+    super(index)
+  end
 end
