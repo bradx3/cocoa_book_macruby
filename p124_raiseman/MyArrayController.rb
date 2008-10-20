@@ -29,6 +29,10 @@ require 'osx/cocoa'
 ###
 # At the time of writing (20081017) the method described in the book caused MacRuby
 # to crash. This is a workaround, but shouldn't be too different from the book really.
+#
+# I also had trouble making the "Begin Editing on Insert" work at the same time as 
+# "Undo insert". I've moved some of the begin editing code into this class and it
+# seems to have solved the problem.
 ###
 class MyArrayController < NSArrayController
   attr_accessor :myDocument
@@ -41,10 +45,16 @@ class MyArrayController < NSArrayController
     undo.setActionName "Insert Person" if !undo.isUndoing
   end
   
-  def addObject(object)
-    super(object)
+  def addObject(person)
+    super(person)
 
-    myDocument.startObservingPerson(object)
+    myDocument.startObservingPerson(person)
+    rearrangeObjects
+
+    a = arrangedObjects
+    row = a.indexOfObjectIdenticalTo(person)
+    
+    myDocument.tableView.editColumn(0, row:row, withEvent:nil, select:true)
   end
 
   def remove(sender)
@@ -53,8 +63,6 @@ class MyArrayController < NSArrayController
     undo = @myDocument.undoManager
     undo.prepareWithInvocationTarget(self).add(sender)
     undo.setActionName "Delete Person" if !undo.isUndoing
-
-#    myDocument.stopObservingPerson(
   end
 
   def removeObjectAtArrangedObjectIndex(index)

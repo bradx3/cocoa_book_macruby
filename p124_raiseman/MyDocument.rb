@@ -28,6 +28,8 @@ require 'osx/cocoa'
 
 class MyDocument < NSDocument
   attr_accessor :employees
+  attr_accessor :tableView
+  attr_accessor :employeeController
 
   def init
     @employees = []
@@ -92,4 +94,5 @@ class MyDocument < NSDocument
     undo.setActionName("Edit")
 
   end
+
 end
