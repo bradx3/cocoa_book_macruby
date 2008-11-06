@@ -34,16 +34,17 @@ class Person
     @personName = "New Person"
   end
 
-  # N.B This never gets called because the save dialog hangs. Unsure why.
   def encodeWithCoder(coder)
     coder.encodeObject(personName, forKey:"personName")
     coder.encodeFloat(expectedRaise, forKey:"expectedRaise")
   end
 
-  # N.B This never gets called because the save dialog hangs. Unsure why.
+  # N.B Load doesn't seem to work right now. This doesn't get called.
   def initWithCoder(coder)
+    puts "INIT"
     personName = coder.decodeObjectForKey("personName")
     expectedRaise = coder.decodeFloatForKey("expectedRaise")
+    puts "LEAVING INIT"
     return self
   end
 end
