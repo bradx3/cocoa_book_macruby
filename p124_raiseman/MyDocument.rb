@@ -92,7 +92,11 @@ class MyDocument < NSDocument
                                                          ofObject:object,
                                                          toValue:oldValue)
     undo.setActionName("Edit")
-
   end
 
+  # N.B This never gets called because the save dialog hangs. Unsure why.
+  def dataOfType(type, error:error)
+    tableView.window.endEditingFor(nil)
+    return NSKeyedArchiver.archivedDataWithRootObject(employees)
+  end
 end

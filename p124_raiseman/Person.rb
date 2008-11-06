@@ -33,4 +33,17 @@ class Person
     @expectedRaise = 5.0
     @personName = "New Person"
   end
+
+  # N.B This never gets called because the save dialog hangs. Unsure why.
+  def encodeWithCoder(coder)
+    coder.encodeObject(personName, forKey:"personName")
+    coder.encodeFloat(expectedRaise, forKey:"expectedRaise")
+  end
+
+  # N.B This never gets called because the save dialog hangs. Unsure why.
+  def initWithCoder(coder)
+    personName = coder.decodeObjectForKey("personName")
+    expectedRaise = coder.decodeFloatForKey("expectedRaise")
+    return self
+  end
 end
